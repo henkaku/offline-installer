@@ -35,6 +35,6 @@ add_custom_target(${PROJECT_NAME}.vpk ALL
 	COMMAND vita-elf-create ${PROJECT_NAME}.elf ${PROJECT_NAME}.velf
 	COMMAND vita-make-fself ${PROJECT_NAME}.velf eboot.bin
 	COMMAND vita-mksfoex -s TITLE_ID=MLCL00002 "${PROJECT_NAME}" param.sfo
-	COMMAND vita-pack-vpk -s param.sfo -b eboot.bin ${PROJECT_NAME}.vpk
+	COMMAND vita-pack-vpk -s param.sfo -b eboot.bin -a ../res/icon0.png=sce_sys/icon0.png -a ../res/template.xml=sce_sys/livearea/contents/template.xml -a ../res/bg.png=sce_sys/livearea/contents/bg.png -a ../res/startup.png=sce_sys/livearea/contents/startup.png ${PROJECT_NAME}.vpk
 )
 add_dependencies(${PROJECT_NAME}.vpk ${PROJECT_NAME}.elf)
