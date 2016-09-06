@@ -88,7 +88,6 @@ void press_exit(void) {
 	printf("Press any key to exit this application.\n");
 	get_key();
 	sceKernelExitProcess(0);
-	exit(0);
 }
 
 void delete_file(const char *path) {
