@@ -192,7 +192,7 @@ int vita_xSleep(sqlite3_vfs *vfs, int microseconds) {
 
 int vita_xCurrentTime(sqlite3_vfs *vfs, double *pTime) {
 	time_t t = 0;
-	SceRtcTime time = {0};
+	SceDateTime time = {0};
 	sceRtcGetCurrentClock(&time, 0);
 	sceRtcGetTime_t(&time, &t);
 	*pTime = t/86400.0 + 2440587.5; 

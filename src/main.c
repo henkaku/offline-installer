@@ -2,9 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include <psp2/types.h>
 #include <psp2/ctrl.h>
 #include <psp2/io/fcntl.h>
 #include <psp2/kernel/threadmgr.h>
+#include <psp2/kernel/processmgr.h>
 #include <psp2/net/http.h>
 #include <psp2/io/stat.h>
 #include <psp2/sysmodule.h>
@@ -85,7 +87,7 @@ int get_key(void) {
 void press_exit(void) {
 	printf("Press any key to exit this application.\n");
 	get_key();
-	exit(0);
+	sceKernelExitProcess(0);
 }
 
 void delete_file(const char *path) {
