@@ -391,7 +391,7 @@ int main(void) {
 	if (fd < 0) {
 		printf("It seems that the mail database does not exist (open ux0:email/message/mail.db err=0x%x)\n", fd);
 		printf("You should open the Email app from LiveArea and then close it without adding an account.\n", fd);
-		printf("If you still see this error message, be sure that you've enabled the "Unsafe Homebrew" option inside molecularShell.\n", fd);		
+		printf("If you still see this error message, be sure that you've enabled the 'Unsafe Homebrew' option inside molecularShell.\n", fd);		
 		printf("(Open molecularShell > press Start > enable Unsafe Homebrew.)\n");
 		press_exit();
 	}
