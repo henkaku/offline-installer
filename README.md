@@ -6,7 +6,7 @@ To install the exploit (You need internet connection to install the exploit, but
 
 * First, install and activate [HENkaku][henkaku]
 * Install the vpk (Found under [releases][releases])
-* Make sure unsafe homebrew is allowed (molecularShell->Start->Enable unsafe homebrew->on)
+* Make sure unsafe homebrew is allowed (molecularShell->press Start button->Enable unsafe homebrew->on)
 * Launch offlineInstaller bubble
 * Follow the instructions: press CROSS to install
 
